@@ -24,7 +24,7 @@ for (let i = 0; i < nums.length; i++) {
     }
 
     while (j < k && nums[j] === nums[j - 1]) j++;
-    while (j < k && nums[j] === nums[k + 1]) k--;
+    while (j < k && nums[k] === nums[k + 1]) k--;
   }
 }
 
