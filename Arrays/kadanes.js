@@ -6,7 +6,7 @@ let start = 0,
 let maxx = Number.MIN_SAFE_INTEGER; // or use -Infinity
 for (let i = 0; i < n; i++) {
   sum += arr[i];
-  if (maxx < sum) {
+  if (sum > maxx) {
     maxx = sum;
   }
   if (sum < 0) {
