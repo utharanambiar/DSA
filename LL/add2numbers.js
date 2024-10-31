@@ -21,8 +21,8 @@ function addLL(l1, l2) {
     }
     sum = sum + carry;
     carry = Math.floor(sum / 10);
-    let node = new Node(sum % 10);
-    temp.next = node;
+    let node = new Node(sum % 10); // carry in node
+    temp.next = node; 
     temp = temp.next;
   }
   return dummy.next;
