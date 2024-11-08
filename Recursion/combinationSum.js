@@ -1,3 +1,5 @@
+//Find unique subsets whose sum equal to given target
+
 let arr = [2, 3, 6, 7],
   target = 7,
   ans = [];
