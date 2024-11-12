@@ -24,4 +24,4 @@ for(let j=1;j<arr.length;j++) {
 for(let k=0;k<=i;k++) {
     console.log(arr[k])
 }
-console.log(arr, i)
+console.log("duplicate",arr, i)
