@@ -17,5 +17,6 @@ if (temp != " ") {
 }
 
 console.log(ans.join(" "));
+
 //easy 1 line solution
 //console.log(str.split(" ").reverse().join(" "));
