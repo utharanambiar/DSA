@@ -1,4 +1,6 @@
+//circular integer array
 let arr = [5, 7, 1, 2, 6, 0];
+// arr is [5, 7, 1, 2, 6, 0, 5, 7, 1, 2, 6, 0]
 //ans = [7,-1 ,2 ,6 ,7 ,5]
 let n = arr.length;
 let nge = [],
