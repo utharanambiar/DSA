@@ -1,4 +1,4 @@
-let num = 450.81256;
+let num = -50;
 let rem = 0,
   q,
   ans = [];
@@ -23,6 +23,9 @@ let map = new Map([
   ["15", "F"],
 ]);
 
+let isNegative = num < 0;
+num = Math.abs(num);
+
 let integerPart = Math.floor(num);
 let fractionalPart = num - integerPart;
 
@@ -41,6 +44,10 @@ if (fractionalPart > 0) {
     fractionalPart -= digit;
     precision--;
   }
+}
+
+if (isNegative) {
+  ans.unshift("-"); // Add minus sign at the beginning
 }
 
 console.log(ans.join(""));
