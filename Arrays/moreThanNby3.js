@@ -12,9 +12,9 @@ for (let i = 0; i < nums.length; i++) {
   } else if (count2 == 0 && nums[i] != ele1) {
     ele2 = nums[i];
     count2 = 1;
-  } else if (ele1 === nums[i]) {
+  } else if (nums[i] === ele1) {
     count1++;
-  } else if (ele2 === nums[i]) {
+  } else if (nums[i] === ele2) {
     count2++;
   } else {
     count1--;
