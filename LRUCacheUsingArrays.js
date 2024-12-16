@@ -16,7 +16,6 @@ class LRUCache {
 
   put(key, val) {
     if (this.cache.has(key)) {
-      this.cache.set(key, val);
       this.updateOrder(key);
     } else {
       if (this.cache.size >= this.capacity) {

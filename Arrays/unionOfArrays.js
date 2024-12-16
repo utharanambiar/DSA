@@ -19,7 +19,9 @@ while (left < arr1.length && right < arr2.length) {
     right++;
     left++;
   } else {
-    res.push(arr1[left]);
+    if (res[res.length - 1] !== arr1[left]) {
+      res.push(arr1[left]);
+    }
     left++;
   }
 }
