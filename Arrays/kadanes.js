@@ -18,21 +18,18 @@ console.log(maxx);
 
 //with subarray
 for (let i = 0; i < n; i++) {
-  if (sum == 0) {
-    start = i;
-    end = i;
-  }
   sum += arr[i];
-  if (maxx < sum) {
+  if (sum > maxx) {
     maxx = sum;
     end = i;
   }
   if (sum < 0) {
     sum = 0;
+    start = i + 1;
+    end = i + 1;
   }
 }
 
 for (let i = start; i <= end; i++) {
   console.log(arr[i]);
 }
-
