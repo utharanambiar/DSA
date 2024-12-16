@@ -12,12 +12,11 @@ let s = "LVIII"; //op: 58 = 50 + 5 + 1 + 1 + 1
 let sum = 0;
 for (let i = 0; i < s.length; i++) {
   if (i < s.length - 1 && map.get(s[i]) < map.get(s[i + 1])) {
-    sum = sum + map.get(s[i+1]) - map.get(s[i]);
+    sum = sum + map.get(s[i + 1]) - map.get(s[i]);
     i++;
   } else {
     sum = sum + map.get(s[i]);
   }
-  console.log(sum);
 }
 
 console.log(sum);
