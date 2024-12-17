@@ -10,17 +10,14 @@ const isLeaf = (node) => {
   if (node == null) {
     return false;
   }
-  if (node.left === null && node.right === null) {
-    return true;
-  }
-  return false;
+  return node.left === null && node.right === null;
 };
 
 const leftSum = (node) => {
   let res = 0;
   if (node != null) {
-    if (isLeaf(node.left)) {
-      res += node.left.data;
+    if (isLeaf(node.right)) {
+      res += node.right.data;
     } else {
       res += leftSum(node.left);
       res += leftSum(node.right);
