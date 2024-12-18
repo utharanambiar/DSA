@@ -26,7 +26,7 @@ while (i < N && W > items[i].weight) {
   i++;
 }
 
-if (W < items[i].weight && i<N) {
+if (W < items[i].weight && i < N) {
   res = res + (W / items[i].weight) * items[i].value;
 }
 

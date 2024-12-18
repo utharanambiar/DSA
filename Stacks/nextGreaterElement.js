@@ -11,11 +11,7 @@ for (let i = 2 * n - 1; i >= 0; i--) {
     stck.pop();
   }
   if (i < n) {
-    if (stck.length !== 0) {
-      nge[i] = stck[stck.length - 1];
-    } else {
-      nge[i] = -1;
-    }
+    nge[i] = stck.length == 0 ? -1 : stck[stck.length - 1];
   }
   stck.push(arr[i % n]);
 }
