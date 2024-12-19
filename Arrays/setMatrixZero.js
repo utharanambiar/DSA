@@ -12,7 +12,7 @@ let col0 = 1;
 for (let i = 0; i < m; i++) {
   for (let j = 0; j < n; j++) {
     if (matrix[i][j] === 0) {
-      matrix[i][0] = 0;
+      matrix[i][0] = 0; // mark col 0 as 0 
       if (j != 0) {
         matrix[0][j] = 0;
       } else {
