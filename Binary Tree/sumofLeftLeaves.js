@@ -18,10 +18,9 @@ const leftSum = (node) => {
   if (node != null) {
     if (isLeaf(node.right)) {
       res += node.right.data;
-    } else {
-      res += leftSum(node.left);
-      res += leftSum(node.right);
     }
+    res += leftSum(node.left);
+    res += leftSum(node.right);
   }
   return res;
 };
